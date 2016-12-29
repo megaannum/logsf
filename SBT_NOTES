@@ -1,0 +1,62 @@
+How to use sbt (Simple Build Tool):
+  see: http://www.scala-sbt.org 
+  sbt command   
+  or run as interpreter.
+                
+  Workflow:   
+    clean
+    compile     
+    test        
+    doc         
+    package   
+    publish
+                
+  commands:
+  clean       Remove all generated files from the target directory.
+  compile     Compiles source code files that are in 
+                src/main/scala, 
+                src/main/java, and 
+                the root directory of the project. 
+  ~ compile   Automatically recompiles source code files while you’re  
+                running SBT in interactive mode.
+  console     Compiles the source code files in the project,
+                puts them on the classpath, and 
+                starts the Scala interpreter (REPL).
+  doc         Generates API documentation from your Scala source
+                code using scaladoc.
+  help        Issued by itself, the help command lists the common
+                commands that are currently available.
+                When given a command, help provides a description of
+                that command.
+  inspect     Displays information about . For instance, inspect
+                library-dependencies displays information about the
+                libraryDependencies setting. (Variables in build.sbt are
+                written in camelCase, but at the SBT prompt, you type them
+                using this hyphen format instead of camelCase.)
+  package     Creates a JAR file (or WAR file for web projects) containing
+                the files in src/main/scala, src/main/java, and resources in
+                src/main/resources.
+  package-doc Creates a JAR file containing API documentation generated
+                from your Scala source code.
+  publish     Publishes your project to a remote repository.
+                See Recipe 18.15, “Publishing Your Library”.
+  publish-local   Publishes your project to a local Ivy repository.
+                See Recipe 18.15, “Publishing Your Library”. reload Reloads
+                the build definition files (build.sbt, project/.scala,
+                and project/.sbt), which is necessary if you change them
+                while you’re in an interactive SBT session.
+  run         Compiles your code, and runs the main class from your project,
+                in the same JVM as SBT. If your project has multiple main
+                in the same JVM as SBT. If your project has multiple main
+                methods (or objects that extend App), you’ll be prompted
+                to select one to run.
+  test        Compiles and runs all tests.
+  update      Updates external dependencies.
+  (above take from: http://alvinalexander.com/scala/sbt-how-to-compile-run-package-scala-project)
+
+
+How to write test cases see:
+  For scalatest:
+    http://www.scalatest.org/
+    http://www.scalatest.org/at_a_glance/FlatSpec
+
