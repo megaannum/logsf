@@ -1,0 +1,2 @@
+# logsf
+simple flexible logger
